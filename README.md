@@ -7,10 +7,10 @@
 
 | 섹션 | 주제 | 구성 |
 |------|------|------|
-| 1. 수집 & 저장 | Lakehouse 기초, 메달리온 아키텍처, Lakeflow 파이프라인, Lakehouse Federation | 강의 3 + 데모 1 |
-| 2. 워크스페이스 | 계정 계층, 다중 워크스페이스 전략, Unity Catalog 설계, Delta Sharing | 강의 4 |
-| 3. 보안 | 네트워크 보안, CMK, RBAC/ABAC, 세분화된 액세스 제어 | 강의 2 + 데모 1 |
-| 4. ID | IdP 페더레이션, SCIM, DABs/GitOps, 감사 로그, 비용 귀속 | 강의 3 + 데모 1 |
+| 1. 수집 & 저장 | Lakehouse 기초, 메달리온 아키텍처, Lakeflow 파이프라인, Lakehouse Federation | 요약 3 + 데모 1 |
+| 2. 워크스페이스 | 계정 계층, 다중 워크스페이스 전략, Unity Catalog 설계, Delta Sharing | 요약 4 |
+| 3. 보안 | 네트워크 보안, CMK, RBAC/ABAC, 세분화된 액세스 제어 | 요약 2 + 데모 1 |
+| 4. ID | IdP 페더레이션, SCIM, DABs/GitOps, 감사 로그, 비용 귀속 | 요약 3 + 데모 1 |
 
 ## 섹션별 노트북
 
