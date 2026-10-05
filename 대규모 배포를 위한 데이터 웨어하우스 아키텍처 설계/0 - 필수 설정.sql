@@ -219,7 +219,3 @@ SELECT 'Schemas and volume created successfully' AS status;
 -- MAGIC print("=" * 70)
 
 -- COMMAND ----------
-
--- DBTITLE 1,저작권
--- MAGIC %md
--- MAGIC &copy; 2026 Databricks, Inc. 모든 권리 보유. Apache, Apache Spark, Spark, Spark 로고, Apache Iceberg, Iceberg 및 Apache Iceberg 로고는 <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a>의 상표입니다.<br/><br/><a href="https://databricks.com/privacy-policy" target="_blank">개인정보 처리방침</a> | <a href="https://databricks.com/terms-of-use" target="_blank">이용약관</a> | <a href="https://help.databricks.com/" target="_blank">지원</a>
