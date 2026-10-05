@@ -26,7 +26,7 @@
 -- MAGIC ## 설정 안내
 -- MAGIC
 -- MAGIC - **컴퓨팅:** Serverless SQL Warehouse (`shared_warehouse`) 사용 권장
--- MAGIC - **데이터 설정:** 사전에 **0 - Required Setup** 노트북 실행 필요
+-- MAGIC - **데이터 설정:** 사전에 **0 - 필수 설정** 노트북 실행 필요
 -- MAGIC - **주의:** 이 노트북의 SQL 셀은 Lakeflow SDP 파이프라인을 정의하므로 대화형으로 실행할 수 없습니다. Databricks UI에서 파이프라인을 생성하고 실행해야 합니다.
 
 -- COMMAND ----------

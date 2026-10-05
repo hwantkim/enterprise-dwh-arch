@@ -31,15 +31,16 @@
 
 # COMMAND ----------
 
+# DBTITLE 1,섹션 1: 효율적인 데이터 수집 및 저장
 # MAGIC %md
 # MAGIC ## 섹션 1: 효율적인 데이터 수집 및 저장
 # MAGIC
 # MAGIC | 노트북 | 유형 | 설명 |
 # MAGIC |----------|------|-------------|
-# MAGIC | [1.1 Lecture - Data Architecture at Scale Introduction]($./1. Efficient Data Ingestion and Storage/1.1 Lecture - Data Architecture at Scale Introduction) | 강의 | "스케일"의 의미, 증폭 효과, Lakehouse 기초, 메달리온 아키텍처 |
-# MAGIC | [1.2 Lecture - Data Warehouse Ingestion at Scale]($./1. Efficient Data Ingestion and Storage/1.2 Lecture - Data Warehouse Ingestion at Scale) | 강의 | 클라우드 스토리지 패턴, 수집 모범 사례, Lakeflow 파이프라인 |
-# MAGIC | [1.3 Demo - Ingestion and Transformation at Scale using Lakeflow]($./1. Efficient Data Ingestion and Storage/1.3 Demo/1.3 Demo - Ingestion and Transformation at Scale using Lakeflow) | 데모 | Lakeflow 파이프라인 구성, CDC, 스키마 진화, 메달리온 아키텍처 |
-# MAGIC | [1.4 Lecture - Lakehouse Federation and Foreign Catalogs]($./1. Efficient Data Ingestion and Storage/1.5 Lecture - Lakehouse Federation and Foreign Catalogs) | 강의 | 페더레이션 데이터 소스, 외부 카탈로그, 대규모 Lakehouse Federation |
+# MAGIC | [1.1 대규모 데이터 아키텍처 소개]($./1. 효율적인 데이터 수집 및 저장/1.1 대규모 데이터 아키텍처 소개) | 강의 | "스케일"의 의미, 증폭 효과, Lakehouse 기초, 메달리온 아키텍처 |
+# MAGIC | [1.2 대규모 데이터 웨어하우스 수집]($./1. 효율적인 데이터 수집 및 저장/1.2 대규모 데이터 웨어하우스 수집) | 강의 | 클라우드 스토리지 패턴, 수집 모범 사례, Lakeflow 파이프라인 |
+# MAGIC | [1.3 데모 - Lakeflow SDP를 사용한 대규모 수집 및 변환]($./1. 효율적인 데이터 수집 및 저장/1.3 데모 - Lakeflow SDP를 사용한 대규모 수집 및 변환) | 데모 | Lakeflow 파이프라인 구성, CDC, 스키마 진화, 메달리온 아키텍처 |
+# MAGIC | [1.5 Lakehouse Federation 및 Foreign Catalogs]($./1. 효율적인 데이터 수집 및 저장/1.5 Lakehouse Federation 및 Foreign Catalogs) | 강의 | 페더레이션 데이터 소스, 외부 카탈로그, 대규모 Lakehouse Federation |
 # MAGIC
 # MAGIC **학습 목표:**
 # MAGIC - 데이터 저장 및 수집 모범 사례 이해 (S3, ADLS 온보딩, 스테이징, 메달리온 아키텍처)
@@ -51,15 +52,16 @@
 
 # COMMAND ----------
 
+# DBTITLE 1,섹션 2: 다중 워크스페이스 전략
 # MAGIC %md
 # MAGIC ## 섹션 2: 다중 워크스페이스 전략
 # MAGIC
 # MAGIC | 노트북 | 유형 | 설명 |
 # MAGIC |----------|------|-------------|
-# MAGIC | [2.1 Lecture - Databricks Accounts and Workspaces Overview]($./2. Multi-Workspace Strategy/2.1 Lecture - Databricks Accounts and Workspaces Overview) | 강의 | 계정 계층 구조, 워크스페이스 기초, 컨트롤 플레인 vs 데이터 플레인 |
-# MAGIC | [2.2 Lecture - Architecting for Multiple Workspaces]($./2. Multi-Workspace Strategy/2.2 Lecture - Architecting for Multiple Workspaces) | 강의 | 워크스페이스 할당 패턴, 격리 전략, 환경 |
-# MAGIC | [2.3 Lecture - Architecting Unity Catalog for Large Scale Environments]($./2. Multi-Workspace Strategy/2.3 Lecture - Architecting Unity Catalog for Large Scale Environments) | 강의 | Metastore 설계, 카탈로그 전략, 크로스 워크스페이스 데이터 액세스 |
-# MAGIC | [2.4 Lecture - Data Sharing in Large Scale Environments]($./2. Multi-Workspace Strategy/2.4 Lecture - Data Sharing in Large Scale Environments) | 강의 | Delta Sharing, Databricks-to-Databricks 공유, 마켓플레이스 |
+# MAGIC | [2.1 Databricks 계정 및 워크스페이스 개요]($./2. 다중 워크스페이스 전략/2.1 Databricks 계정 및 워크스페이스 개요) | 강의 | 계정 계층 구조, 워크스페이스 기초, 컨트롤 플레인 vs 데이터 플레인 |
+# MAGIC | [2.2 다중 워크스페이스 아키텍처 설계]($./2. 다중 워크스페이스 전략/2.2 다중 워크스페이스 아키텍처 설계) | 강의 | 워크스페이스 할당 패턴, 격리 전략, 환경 |
+# MAGIC | [2.3 대규모 환경을 위한 Unity Catalog 아키텍처 설계]($./2. 다중 워크스페이스 전략/2.3 대규모 환경을 위한 Unity Catalog 아키텍처 설계) | 강의 | Metastore 설계, 카탈로그 전략, 크로스 워크스페이스 데이터 액세스 |
+# MAGIC | [2.4 대규모 환경에서의 데이터 공유]($./2. 다중 워크스페이스 전략/2.4 대규모 환경에서의 데이터 공유) | 강의 | Delta Sharing, Databricks-to-Databricks 공유, 마켓플레이스 |
 # MAGIC
 # MAGIC **학습 목표:**
 # MAGIC - 엔터프라이즈 데이터 웨어하우징 배포를 위한 워크스페이스 할당 모범 사례
@@ -72,14 +74,15 @@
 
 # COMMAND ----------
 
+# DBTITLE 1,섹션 3: 대규모 보안 및 거버넌스
 # MAGIC %md
 # MAGIC ## 섹션 3: 대규모 보안 및 거버넌스
 # MAGIC
 # MAGIC | 노트북 | 유형 | 설명 |
 # MAGIC |----------|------|-------------|
-# MAGIC | [3.1 Lecture - Data Warehouse Enterprise Security]($./3. Security and Governance at Scale/3.1 Lecture - Data Warehouse Enterprise Security) | 강의 | 보안 모델, 네트워크 보안, 암호화, 워크스페이스 강화 |
-# MAGIC | [3.2 Lecture - Securing Data using Unity Catalog]($./3. Security and Governance at Scale/3.2 Lecture - Securing Data using Unity Catalog) | 강의 | RBAC/ABAC, 세분화된 액세스 제어, 열 마스킹, 행 필터 |
-# MAGIC | [3.3 Demo - Implementing FGAC in Unity Catalog]($./3. Security and Governance at Scale/3.3 Demo - Implementing FGAC in Unity Catalog) | 데모 | 행 필터, 열 마스크, ABAC |
+# MAGIC | [3.1 데이터 웨어하우스 엔터프라이즈 보안]($./3. 대규모 보안 및 거버넌스/3.1 데이터 웨어하우스 엔터프라이즈 보안) | 강의 | 보안 모델, 네트워크 보안, 암호화, 워크스페이스 강화 |
+# MAGIC | [3.2 Unity Catalog를 사용한 데이터 보안]($./3. 대규모 보안 및 거버넌스/3.2 Unity Catalog를 사용한 데이터 보안) | 강의 | RBAC/ABAC, 세분화된 액세스 제어, 열 마스킹, 행 필터 |
+# MAGIC | [3.3 데모 - Unity Catalog에서 FGAC 구현하기]($./3. 대규모 보안 및 거버넌스/3.3 데모 - Unity Catalog에서 FGAC 구현하기) | 데모 | 행 필터, 열 마스크, ABAC |
 # MAGIC
 # MAGIC **학습 목표:**
 # MAGIC - 워크스페이스 보안 체크리스트 나열 (CMK, 데이터 유출, 프라이빗 연결)
@@ -92,15 +95,16 @@
 
 # COMMAND ----------
 
+# DBTITLE 1,섹션 4: ID 및 관리
 # MAGIC %md
 # MAGIC ## 섹션 4: ID 및 관리
 # MAGIC
 # MAGIC | 노트북 | 유형 | 설명 |
 # MAGIC |----------|------|-------------|
-# MAGIC | [4.1 Lecture - Databricks Identities]($./4. Identity and Administration/4.1 Lecture - Databricks Identities) | 강의 | 사용자, 그룹, 서비스 프린시펄, IdP 페더레이션, SCIM, 토큰 관리, 그룹 설계 |
-# MAGIC | [4.2 Lecture - Deploying Databricks Solutions in the Enterprise]($./4. Identity and Administration/4.2 Lecture - Deploying Databricks Solutions in the Enterprise) | 강의 | DevOps 패턴, Git Folders, Declarative Automation Bundles (DABs) |
-# MAGIC | [4.3 Demo - Deploying Solutions using DABs and GitOps]($./4. Identity and Administration/4.3 Demo - Deploying Solutions using DABs and GitOps) | 데모 | 번들 구성, 다중 환경 타깃, CI/CD 통합 |
-# MAGIC | [4.4 Lecture - Auditing and Monitoring Databricks]($./4. Identity and Administration/4.4 Lecture - Auditing and Monitoring Databricks) | 강의 | 감사 로그, 웨어하우스 성능, 비용 귀속, Lakehouse Monitoring |
+# MAGIC | [4.1 Databricks Identities]($./4. ID 및 관리/4.1 Databricks Identities) | 강의 | 사용자, 그룹, 서비스 프린시펄, IdP 페더레이션, SCIM, 토큰 관리, 그룹 설계 |
+# MAGIC | [4.2 엔터프라이즈에서 Databricks 솔루션 배포]($./4. ID 및 관리/4.2 엔터프라이즈에서 Databricks 솔루션 배포) | 강의 | DevOps 패턴, Git Folders, Declarative Automation Bundles (DABs) |
+# MAGIC | [4.3 데모 - DABs를 사용한 솔루션 배포]($./4. ID 및 관리/4.3 데모 - DABs를 사용한 솔루션 배포) | 데모 | 번들 구성, 다중 환경 타깃, CI/CD 통합 |
+# MAGIC | [4.4 Databricks 감사 및 모니터링]($./4. ID 및 관리/4.4 Databricks 감사 및 모니터링) | 강의 | 감사 로그, 웨어하우스 성능, 비용 귀속, Lakehouse Monitoring |
 # MAGIC
 # MAGIC **학습 목표:**
 # MAGIC - 대규모 배포를 위한 SSO, IdP 통합 및 SCIM 이해
