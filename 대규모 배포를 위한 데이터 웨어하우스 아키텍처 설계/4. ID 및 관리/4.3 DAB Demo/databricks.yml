@@ -1,0 +1,61 @@
+bundle:
+  name: bakehouse-analytics
+
+variables:
+  catalog:
+    description: 파이프라인 출력용 유니티 카탈로그 카탈로그
+  warehouse_id:
+    description: 알림 실행용 SQL 웨어하우스 ID
+
+resources:
+  pipelines:
+    bakehouse_pipeline:
+      name: bakehouse-pipeline-${bundle.target}
+      catalog: ${var.catalog}
+      target: default
+      libraries:
+        - file:
+            path: ./src/bakehouse_pipeline.sql
+      configuration:
+        catalog: ${var.catalog}
+      channel: CURRENT
+      continuous: false
+      serverless: true
+
+  jobs:
+    bakehouse_pipeline_job:
+      name: bakehouse-pipeline-job-${bundle.target}
+      tasks:
+        - task_key: run_pipeline
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.bakehouse_pipeline.id}
+
+  alerts:
+    low_revenue_alert:
+      display_name: low-daily-revenue-alert-${bundle.target}
+      query_text: |
+        SELECT
+          transactionDate,
+          SUM(total_revenue) AS daily_total_revenue
+        FROM ${var.catalog}.gold.daily_sales_summary
+        WHERE transactionDate = CURRENT_DATE() - INTERVAL 1 DAY
+        GROUP BY transactionDate
+        HAVING SUM(total_revenue) < 1000
+      evaluation:
+        comparison_operator: GREATER_THAN
+        source:
+          display: daily_total_revenue
+          name: daily_total_revenue
+        threshold:
+          value:
+            double_value: 0
+      schedule:
+        quartz_cron_schedule: "0 0 8 * * ?"
+        timezone_id: UTC
+        pause_status: UNPAUSED
+      warehouse_id: ${var.warehouse_id}
+
+targets:
+  dev:
+    mode: development
+    default: true
