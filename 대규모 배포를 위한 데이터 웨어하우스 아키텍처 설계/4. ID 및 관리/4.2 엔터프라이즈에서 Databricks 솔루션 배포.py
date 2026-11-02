@@ -116,7 +116,7 @@
 # MAGIC | 카탈로그 | `dev_bakehouse` | `staging_bakehouse` | `prod_bakehouse` |
 # MAGIC | 워어하우스 크기 | X-Small | Small | Medium 또는 Large |
 # MAGIC | 잡 스케줄 | 수동 / 일시 중지 | 일시 중지 또는 매시간 | 프로덕션 cron |
-# MAGIC | 클러스터 정책 | 개발자 정책 | 표준 정책 | 프로덕션 정책 |
+# MAGIC | 컴퓨트 정책 | 개발자 정책 | 표준 정책 | 프로덕션 정책 |
 # MAGIC | `run_as` | 현재 사용자 | 서비스 주체 | 서비스 주체 |
 # MAGIC | 권한 | 개발자 전용 | QA 팀 | 프로덕션 그룹 |
 # MAGIC
