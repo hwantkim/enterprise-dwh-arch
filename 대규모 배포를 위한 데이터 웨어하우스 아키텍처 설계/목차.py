@@ -40,7 +40,7 @@
 # MAGIC | [1.1 대규모 데이터 아키텍처 소개]($./1. 효율적인 데이터 수집 및 저장/1.1 대규모 데이터 아키텍처 소개) | 강의 | "스케일"의 의미, 증폭 효과, Lakehouse 기초, 메달리온 아키텍처 |
 # MAGIC | [1.2 대규모 데이터 웨어하우스 수집]($./1. 효율적인 데이터 수집 및 저장/1.2 대규모 데이터 웨어하우스 수집) | 강의 | 클라우드 스토리지 패턴, 수집 모범 사례, Lakeflow 파이프라인 |
 # MAGIC | [1.3 데모 - Lakeflow SDP를 사용한 대규모 수집 및 변환]($./1. 효율적인 데이터 수집 및 저장/1.3 데모 - Lakeflow SDP를 사용한 대규모 수집 및 변환) | 데모 | Lakeflow 파이프라인 구성, CDC, 스키마 진화, 메달리온 아키텍처 |
-# MAGIC | [1.5 Lakehouse Federation 및 Foreign Catalogs]($./1. 효율적인 데이터 수집 및 저장/1.5 Lakehouse Federation 및 Foreign Catalogs) | 강의 | 페더레이션 데이터 소스, 외부 카탈로그, 대규모 Lakehouse Federation |
+# MAGIC | [1.4 Lakehouse Federation 및 Foreign Catalogs]($./1. 효율적인 데이터 수집 및 저장/1.4 Lakehouse Federation 및 Foreign Catalogs) | 강의 | 페더레이션 데이터 소스, 외부 카탈로그, 대규모 Lakehouse Federation |
 # MAGIC
 # MAGIC **학습 목표:**
 # MAGIC - 데이터 저장 및 수집 모범 사례 이해 (S3, ADLS 온보딩, 스테이징, 메달리온 아키텍처)

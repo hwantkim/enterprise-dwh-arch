@@ -66,6 +66,11 @@
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC
+
+# COMMAND ----------
+
 # DBTITLE 1,5. 상세 감사 로그
 # MAGIC %md
 # MAGIC ## 5. 상세 감사 로그 (Verbose Audit Logs)
