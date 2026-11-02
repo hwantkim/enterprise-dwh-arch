@@ -110,8 +110,8 @@ SELECT 'Schemas and volume created successfully' AS status;
 -- MAGIC 5,Downtown Bakehouse,San Francisco,Financial District,94111,USA,Large,-122.3964,37.7949,50,UPDATE,2024-12-15 11:00:00
 -- MAGIC 8,Riverside Breads,London,Canary Wharf,E14 5AB,UK,Large,-0.0235,51.5054,80,UPDATE,2024-12-15 11:30:00
 -- MAGIC 12,Hilltop Pastries,Paris,Montmartre,75018,France,Medium,2.3387,48.8867,120,UPDATE,2024-12-15 12:00:00
--- MAGIC 3,,,,,,,,,DELETE,2024-12-15 13:00:00
--- MAGIC 7,,,,,,,,,DELETE,2024-12-15 13:30:00"""
+-- MAGIC 3,,,,,,,,,,DELETE,2024-12-15 13:00:00
+-- MAGIC 7,,,,,,,,,,DELETE,2024-12-15 13:30:00"""
 -- MAGIC
 -- MAGIC file_path = f"{staging_path}/franchise_changes.csv"
 -- MAGIC with open(file_path, 'w') as f:
@@ -217,5 +217,3 @@ SELECT 'Schemas and volume created successfully' AS status;
 -- MAGIC print("\n" + "=" * 70)
 -- MAGIC print("You are ready to begin the course!")
 -- MAGIC print("=" * 70)
-
--- COMMAND ----------
