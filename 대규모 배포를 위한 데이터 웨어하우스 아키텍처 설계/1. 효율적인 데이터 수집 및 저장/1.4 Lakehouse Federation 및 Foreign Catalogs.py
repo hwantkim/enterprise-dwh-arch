@@ -1,7 +1,7 @@
 # Databricks notebook source
 # DBTITLE 1,제목
 # MAGIC %md
-# MAGIC # 1.5 Lakehouse Federation 및 Foreign Catalogs
+# MAGIC # 1.4 Lakehouse Federation 및 Foreign Catalogs
 # MAGIC
 
 # COMMAND ----------
