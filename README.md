@@ -21,7 +21,7 @@
 - 1.1 대규모 데이터 아키텍처 소개
 - 1.2 대규모 데이터 웨어하우스 수집
 - 1.3 데모 - Lakeflow SDP를 사용한 대규모 수집 및 변환
-- 1.5 Lakehouse Federation 및 Foreign Catalogs
+- 1.4 Lakehouse Federation 및 Foreign Catalogs
 
 ### 섹션 2: 다중 워크스페이스 전략
 - 2.1 Databricks 계정 및 워크스페이스 개요
